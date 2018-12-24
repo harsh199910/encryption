@@ -5,8 +5,9 @@ using namespace std;
 int main() {
     string text;
 	char a[20],b[20];
-	int len,count=-1,co=0,q,w,e;
+	int len,count=-1,co=0,q,w,e,enlen=0,t;
 	getline(cin,text);
+	cin>>enlen;
 	len = text.length();
 
 	for(int x=0;x<=len;x++)
@@ -35,6 +36,21 @@ int main() {
 	{
 	    for(int m=1;m<=e;m++)
 	    {text[x]++;
+	    }
+	    
+	}
+	for(int t=0;t<=len;t++)
+	{
+	    for(int n=1;n<=e;n++)
+	    {text[t]++;
+	    }
+	    
+	}
+	t=e+enlen;
+	for(int k=0;k<=len;k++)
+	{
+	    for(int p=1;p<=t;p++)
+	    {text[k]++;
 	    }
 	    
 	}
