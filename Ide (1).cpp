@@ -1,10 +1,25 @@
+/******************************************************************************
+
+Welcome to encryption algorithm 
+
+This code is in c++14 format . input value are message and key.regarding complexity,
+it use more complex algorithm than 3DEA(Triple Data Encryption Algorithm) .
+orgin is based on CAESER CIPHER .turing 56 bit key into 112 bit complexity
+
+
+INPUT---message
+        key(should be same in decryption)
+
+             HAPPY CODING
+
+*******************************************************************************/
 #include <iostream>
 #include <string>
 using namespace std;
 
 int main() {
-    string text;
-	char a[20],b[20];
+    string text,res="";
+	char arr[11]={'a','b','c','f','t','y','u','d','e','g','h'};
 	int len,count=-1,co=0,q,w,e,enlen=0,t;
 	getline(cin,text);
 	cin>>enlen;
@@ -30,7 +45,7 @@ int main() {
 	else
 	{w=0;}
 	
-	e=q+w;
+	e=(q%w)+1;
 	
 	for(int x=0;x<=len;x++)
 	{
@@ -55,6 +70,18 @@ int main() {
 	    
 	}
 	
-	cout<<text<<"\n"<<len<<"\n"<<count<<"\n"<<co<<"\n"<<q<<"\n"<<w;
+	for(char a=0;a<=10;a++)
+	{res=res+arr[rand()%11];
+	}
+	cout<<text;
+	cout<<res;
 	return 0;
 }
+
+/*******************************************************************************************************************
+Example:-
+input - hey man , how are you;(message)
+        1( key -should be same as decryption )
+	
+output - li}$qer$0$lsi$evi$}syuhucbtaufbe                                                                                                           
+*********************************************************************************************************************/	
