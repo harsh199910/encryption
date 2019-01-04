@@ -4,7 +4,7 @@ Welcome to encryption algorithm
 
 This code is in c++14 format . input value are message and key.regarding complexity,
 it use more complex algorithm than 3DEA(Triple Data Encryption Algorithm) .
-orgin is based on CAESER CIPHER .turning 56 bit key into 112 bit key complexity
+orgin is based on CAESER CIPHER .turning 56 bit key into 256 bit key complexity
 
 
 INPUT---message
